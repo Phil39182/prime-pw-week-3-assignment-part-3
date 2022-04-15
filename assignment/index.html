@@ -12,6 +12,18 @@
       <h2>Check the console...</h2>
     </header>
     <!-- create an ordered list with any questions you have on this week's material -->
+    
+    <button id="myBtn" type="button">Click here to see my questions!</button>
+  <script>
+    const myBtn = document.getElementById("myBtn");
 
+    myBtn.addEventListener("click", function(e) {
+      const questions = confirm("Are you sure?");
+      if ( questions ){
+        alert("I don't really have any questions, have a nice day Edan!")
+      }
+    });
+
+  </script>
   </body>
 </html>
